@@ -7,12 +7,12 @@ public:
             int complement = target - nums[i];
 
             if(mp.find(complement) != mp.end()){
-                return {mp[complement], i}; // Found the pair
+                return {mp[complement], i}; 
             }
 
-            mp[nums[i]] = i; // Store the current number's index
+            mp[nums[i]] = i; 
         }
 
-        return {}; // No valid pair found
+        return {};
     }
 };
